@@ -25,24 +25,38 @@ abstract class Animal {
     public void setAge(int age) {this.age = age;}
     public int getWeight() {return weight;}
     public void setWeight(int weight) {this.weight = weight;}
+
+    public void probabilityToSurvive() {
+    }
+
+    public void howDangerous() {
+    }
+
+    public void howBeautifulVoice() {
+    }
 }
 class Main{
     public static void main(String[] args) {
-        Dog dog1 = new Dog("Jack","pudel");
-        dog1.eat("Lemon");
-        dog1.getVoice();
-        dog1.probabilityToSurvive();
+
+        Animal obj[] = new Animal[3];
+        obj[0] = new Dog("Jack","pudel");
+        obj[1] = new BlowFish("Tiki",10,20, 100);
+        obj[2] = new Pigeon();
+
+        obj[0].eat("Lemon");
+        obj[0].getVoice();
+        obj[0].probabilityToSurvive();
+        obj[0].setAge(5);
+        obj[0].setWeight(10);
         System.out.println();
 
-        BlowFish fish1 = new BlowFish("Tiki",100);
-        fish1.eat("Lantaropa");
-        fish1.getVoice();
-        fish1.howDangerousFish();
+        obj[1].eat("Lantaropa");
+        obj[1].getVoice();
+        obj[1].howDangerous();
         System.out.println();
 
-        Pigeon bird1 = new Pigeon("Simon","white");
-        bird1.eat("Apple");
-        bird1.getVoice();
-        bird1.howBeautifulVoice();
+        obj[2].eat("Apple");
+        obj[2].getVoice();
+        obj[2].howBeautifulVoice();
     }
 }

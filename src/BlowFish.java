@@ -8,7 +8,7 @@ public class BlowFish extends Fish{
     public BlowFish(String name, int size){
         super(name,size);
     }
-    public void howDangerousFish(){
+    public void howDangerous(){
         System.out.println("Blow Fish is dangerous enough, but speed could be a problem.");
     }
     @Override

@@ -13,7 +13,7 @@ public class Fish extends Animal{
         super(name);
         this.size = size;
     }
-    public void howDangerousFish(){
+    public void howDangerous(){
         System.out.println("Tells how dangerous fish could be.");
     }
     public int getSize() {return size;}
