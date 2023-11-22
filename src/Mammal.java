@@ -1,23 +1,23 @@
 public class Mammal extends Animal{
-    private String breed;
+    private String order;
 
-    public Mammal(String name, int age, int weight, String breed){
+    public Mammal(String name, int age, int weight, String order){
         super(name, age, weight);
-        this.breed = breed;
+        this.order = order;
     }
     public Mammal(){
         super();
-        this.breed = "unknown";
+        this.order = "unknown";
     }
-    public Mammal(String name, String breed){
+    public Mammal(String name, String order){
         super(name);
-        this.breed = breed;
+        this.order = order;
     }
     public void probabilityToSurvive(){
         System.out.println("Tells how fast mammal to survive.");
     }
-    public String getBreed() {return breed;}
-    public void setBreed(String breed) {this.breed = breed;}
+    public String getBreed() {return order;}
+    public void setBreed(String order) {this.order = order;}
 
     @Override
     public void eat(String foodName) {
